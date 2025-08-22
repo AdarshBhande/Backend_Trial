@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Management</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h2>Add a New Customer</h2>
+    <form id="customerForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <button type="submit">Add Customer</button>
+    </form>
+    <p id="responseMessage"></p>
+
+    <hr>
+
+    <h2>Customer List</h2>
+    <button id="loadCustomersBtn">Load Customers</button>
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="customerTableBody">
+            </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
