@@ -16,14 +16,12 @@ app.use(express.json());
 
 // --- PostgreSQL Connection ---
 // Replace with your actual database credentials
+// --- PostgreSQL Connection ---
 const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'my_business_db', 
-    password: process.env.PG_PASSWORD, // Use the variable here
-    port: 5432,
+    connectionString: process.env.postgresql://backend_trial_user:xjtI7vGmC5PjiXwiUXUpsPNb1KrAEcPz@dpg-d2k2ngqli9vc73dr97bg-a/backend_trial
 });
-// --- API Routes (Endpoints) ---
+
+// ... your API routes// --- API Routes (Endpoints) ---
 
 // 1. GET all customers
 app.get('/customers', async (req, res) => {
